@@ -1,0 +1,198 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.3in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resdateitem}[2]{\item
+\begin{tabular*}{6.95in}{l@{\extracolsep{\fill}}r}
+		#1 & \textit{#2} \\
+\end{tabular*}\vspace{-3pt}}
+\newcommand{\noresrepeat}[0]{\vspace{-20pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Steven Roose}  & +32 484 73 97 53\\
+\href{mailto:stevenroose@gmail.com}{stevenroose@gmail.com} &  \href{http://www.stevenroose.be}{www.stevenroose.be} \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+
+\resheading{Education}
+\begin{itemize}[leftmargin=*]
+\item[]
+	\ressubheading{University of Leuven - Faculty of Engineering Science}{ }{Bachelor of Engineering Science}{Sep. 2010 - present}
+	\begin{itemize}
+		\resitem{Specialization: Computer Science, Electrical Engineering}
+	\end{itemize}
+
+	\ressubheading{\noresrepeat }{ }{Master of Engineering Science: Computer Science}{Sep. 2013 - present}
+	\begin{itemize}
+		\resitem{Specialization: Artificial Intelligence}
+	\end{itemize}
+
+\item[]
+	\ressubheading{A.I. Class by Sebastian Thrun and Peter Norvig}{ }{Advanced Track of Introduction to Artificial Intelligence}{Sep. 2011 - Dec. 2011}
+
+\item[]
+	\ressubheading{Coursera}{ }{Online courses}{ }
+	\begin{itemize}
+		\resdateitem{Software Engineering for SaaS}{Feb. 2012 - May. 2012}
+		\item[] \textit{University of California, Berkeley}
+		\resdateitem{Introduction to Sustainability}{Sep. 2012 - Nov. 2012}
+		\item[] \textit{University of Illinois at Urbana-Champaign}
+		\resdateitem{Energy, the Environment, and Our Future}{Jan. 2014 - Mar. 2014}
+		\item[] \textit{The Pennsylvania State University}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}[leftmargin=*]
+
+\item[]
+	\ressubheading{BeSt Designs}{ }{Web Developer}{2007 - 2012}
+	\begin{itemize}
+		\resitem{Building websites featuring photo albums, contact forms, news updates, ... using basic web technology such as PHP, JavaScript, HTML and CSS.}
+		\resitem{Integrating websites with existing CMS technologies and extending the WordPress functionality with a custom plugin.}
+		\resitem{Utilizing the basic development process of extreme programming and feedback cycles with customers.}
+	\end{itemize}
+
+\end{itemize}
+
+
+\resheading{Open Source}
+\begin{itemize}[leftmargin=*]
+
+\item[]
+	\ressubheading{Pointy Castle}{\href{https://github.com/pointycastle}{github.com/pointycastle}}{Cryptography library for Dart developers}{ }
+	\begin{itemize}
+		\resitem{Cryptographic algorithms ported from Bouncy Castle or other sources.}
+		\resitem{Reflection-based registry system that allows users to use custom implementations.}
+	\end{itemize}
+
+\item[]
+	\ressubheading{Dartcoin}{\href{https://github.com/dartcoin}{github.com/dartcoin}}{Bitcoin implementation in the Dart language}{ }
+	\begin{itemize}
+		\resitem{Implementation of core Bitcoin protocol primitives with binary data serialization and parsing.}
+		\resitem{Transaction signing and block validation.}
+	\end{itemize}
+
+\end{itemize}
+
+\newpage
+
+\resheading{Social Experience}
+\begin{itemize}[leftmargin=*]
+
+\item[]
+	\ressubheading{Vlaamse Technishe Kring, VTK Leuven}{ }{Student Representative \& Volunteer}{Sep. 2015 - present}
+	\begin{itemize}
+		\resitem{Member of Board of Directors}
+		\begin{itemize}
+			\resitem{General decision-making about all activities and policies.}
+			\resitem{Financial planning and evaluation of internal and external activities.}
+		\end{itemize}
+		\resitem{Education}
+		\begin{itemize}
+			\resitem{Representing the students of the engineering faculty in different faculty meetings.}
+			\resitem{Organizing student representation for all education within the faculty.}
+		\end{itemize}
+	\end{itemize}
+
+\item[]
+	\ressubheading{Scouts \& Gidsen Schilde, Scouting}{ }{Group Responsible}{Sep. 2012 - Aug. 2015}
+	\begin{itemize}
+			\resitem{Managing the day-to-day organization and motivating volunteers.}
+			\resitem{Supervising the work and activities of leaders and resolving difficulties or conflicts.}
+			\resitem{Communicating with the municipality, insurance providers, parents and the public.}
+	\end{itemize}
+
+	\ressubheading{\noresrepeat}{ }{Leader}{Sep. 2010 - Aug. 2015}
+	\begin{itemize}
+		\resitem{Preparing both entertainment and educational activities for children from 6 to 18 years old.}
+		\resitem{Working together with other leaders to independently maintain our infrastructure and material.}
+	\end{itemize}
+
+\item[]
+	\ressubheading{Youth Climate Conference Belgium}{Antwerp}{Co-organiser}{Sep. 12 2009}
+	\begin{itemize}
+		\resitem{Educating youth about the issues of climate change and global warming.}
+		\resitem{Polling for initiatives and opinions to represent Belgium at the European Youth Climate Conference.}
+	\end{itemize}
+
+\item[]
+	\ressubheading{University of Leuven}{ }{Student Representative}{ }
+	\begin{itemize}
+		\resdateitem{Standing Education Commission Computer Science}{Sep. 2011 - present}
+		\resdateitem{Council of the Faculty of Engineering Science}{Sep. 2012 - present}
+		\resdateitem{Faculty Standing Education Commission}{Sep. 2015 - present} % name unsure
+		\resdateitem{Student Services Council KU Leuven}{Sep. 2015 - present}
+		\resdateitem{Student Services Council KU Leuven @ Leuven}{Sep. 2015 - present}
+		\resdateitem{General Meeting of Student Council KU Leuven (Stura KU Leuven)}{Sep. 2015 - present}
+		\resdateitem{General Meeting of Flemish Student Association (VVS)}{Sep. 2015 - present}
+	\end{itemize}
+
+
+\end{itemize}
+
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:]
+Dutch, English, French (understanding)
+\item[Programming languages:]
+Dart, Java, JavaScript, Go, Python, PHP, Haskell, Prolog, HTML, CSS
+\item[Operating systems:]
+Debian, Ubuntu, Arch Linux, Fedora, OS X
+\end{description}
+
+
+%
+%\resheading{Personal}
+%
+%\begin{description}
+%\item[Hobbies:] scouting, reading, occasional gaming, playing guitar
+%\item[Technology-related interests:] Android, Bitcoin, web technology
+%\item[Interests:] environmental issues, physics, philosophy, nature
+%\item[Characteristics:] trustworthy, thoughtful, perspicacious, passionate
+%\end{description}
+
+\end{document}
